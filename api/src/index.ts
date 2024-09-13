@@ -7,7 +7,7 @@ dotenv.config();
 const app: Express = express();
 const port = process.env.PORT || 3000;
 
-app.use("/", router)
+app.use("", router)
 
 
 app.listen(port, () => {
