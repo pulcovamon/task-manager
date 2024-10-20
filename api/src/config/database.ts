@@ -1,9 +1,8 @@
-import { Sequelize } from 'sequelize-typescript';
+import { Sequelize } from 'sequelize';
 
 const sequelize = new Sequelize({
   dialect: 'sqlite',
-  storage: 'database.sqlite',
-  models: [__dirname + '/../models']
+  storage: 'database/task_manager.sqlite',
 });
 
 export default sequelize;
